@@ -225,7 +225,6 @@
 
   .section-title em { font-style: italic; color: var(--gold); }
 
-  /* SPECIFIC STYLING FROM IMAGE REFERENCE image_e3b09c.png */
   .small-cinematic-title {
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
@@ -242,13 +241,47 @@
     margin-bottom: 3rem;
   }
 
+  /* 2x2 CINEMATIC IMAGE MATRIX LAYOUT */
+  .matrix-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .matrix-item {
+    text-align: center;
+  }
+
+  .matrix-circle {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 0.75rem auto;
+  }
+
+  .matrix-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+  }
+
   /* ABOUT */
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 5rem;
+    grid-template-columns: 1.1fr 1.3fr;
+    gap: 3rem;
     align-items: start;
-    max-width: 1100px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .about-body {
@@ -616,6 +649,7 @@
       gap: 2.5rem;
     }
     .hero-visual { display: none; }
+    .matrix-2x2 { padding-right: 0; margin-bottom: 2rem; }
     .process-steps { grid-template-columns: 1fr 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     nav .nav-links { display: none; }
@@ -674,11 +708,27 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
-    <div>
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">Craft,<br><em>curiosity</em> &<br>collaboration</h2>
-      <div class="divider"></div>
+    
+    <!-- 2x2 IMAGE MATRIX INSERTION (MOVED FROM BOTTOM TO LEFT EMPTY SPACE) -->
+    <div class="matrix-2x2">
+      <div class="matrix-item">
+        <img class="matrix-circle" src="project validation 1.jpg" alt="Project Validation">
+        <div class="matrix-label">Project Validation</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="behind-the-scenes.jpg" alt="Behind the Scenes">
+        <div class="matrix-label">Behind the Scenes</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="production-outcome.jpg" alt="Outcome">
+        <div class="matrix-label">Outcome</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="final-reflection.jpg" alt="Reflection">
+        <div class="matrix-label">Reflection</div>
+      </div>
     </div>
+
     <div>
       <p class="about-body">
         I am a BA Film Production student. I appreciate both the technical and artistic parts of filmmaking. I am totally interested in sound production and cinematography, and I enjoy examining how sound and pictures combine to convey emotion and meaning in movies.
@@ -740,25 +790,17 @@
         <img src="project-overview.jpg" alt="Project Overview" style="width: 100%; height: auto; display: block;">
       </div>
 
-      <!-- REPLACED WITH SMALL CINEMATIC HEADING FROM image_e3b09c.png -->
+      <!-- UPDATED WITH SLEEK INLINE HEADINGS Pointing to New 2x2 Matrix Information -->
       <h3 class="small-cinematic-title">Behind the Scenes</h3>
-      
-      <!-- IMAGE INSERTION: behind-the-scenes (width 60%, centered) -->
-      <div style="margin: 1.5rem auto; width: 60%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
-        <img src="behind-the-scenes.jpg" alt="Behind the Scenes" style="width: 100%; height: auto; display: block;">
-      </div>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem;">
+        Comprehensive visual tracking logs detailing equipment deployment, production workspace configuration, and technical monitoring layouts.
+      </p>
 
-      <!-- REPLACED WITH SMALL CINEMATIC HEADING FROM image_e3b09c.png -->
       <h3 class="small-cinematic-title">Project Validation</h3>
-
-      <!-- IMAGE INSERTION: project validation 1 & 2 (side-by-side) -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
-        <div style="border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
-          <img src="project validation 1.jpg" alt="Project Validation 1" style="width: 100%; height: auto; display: block;">
-        </div>
-        <div style="border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
-          <img src="project validation 2.jpg" alt="Project Validation 2" style="width: 100%; height: auto; display: block;">
-        </div>
+      
+      <!-- IMAGE INSERTION: project validation 2 (width 60%, centered) -->
+      <div style="margin: 1.5rem auto; width: 60%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
+        <img src="project validation 2.jpg" alt="Project Validation 2" style="width: 100%; height: auto; display: block;">
       </div>
 
       <p class="project-subtitle">Core Production Elements & Execution Pipeline</p>
@@ -926,13 +968,15 @@
 <section class="reflection-section">
   <p class="section-label">Reflection</p>
   
-  <!-- REPLACED WITH SMALL CINEMATIC HEADING FROM image_e3b09c.png -->
-  <h3 class="small-cinematic-title" style="margin-bottom: 2rem;">Outcome</h3>
+  <!-- UPDATED INLINE TITLE MAPPED TO THE NEW MATRIX LAYOUT DATA STRUCTURE -->
+  <h3 class="small-cinematic-title">Outcome Analysis</h3>
+  <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem;">
+    Critical review metrics measuring post-production audio consistency, scene synchronization depth, and narrative output values.
+  </p>
 
-  <!-- IMAGE INSERTION: production-outcome (full container alignment width) -->
-  <div style="max-width: 1100px; margin: 0 auto 2rem auto; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
-    <img src="production-outcome.jpg" alt="Production Outcome" style="width: 100%; height: auto; display: block;">
-  </div>
+  <blockquote class="blockquote">
+    "The core of the project was utilizing the combination of sound and picture to ensure a professional and immersive cinematic storytelling artifact."
+  </blockquote>
 
   <div class="reflection-grid">
     <div class="reflection-card">
@@ -961,14 +1005,9 @@
     </div>
     <div class="reflection-card">
       
-      <!-- REPLACED WITH SMALL CINEMATIC HEADING FROM image_e3b09c.png -->
-      <h3 class="small-cinematic-title" style="margin-top: 0; margin-bottom: 1rem; font-size: 0.75rem; letter-spacing: 0.2em;">Reflection</h3>
+      <!-- UPDATED INLINE TITLE MAPPED TO THE NEW MATRIX LAYOUT DATA STRUCTURE -->
+      <h3 class="small-cinematic-title" style="margin-top: 0; margin-bottom: 1rem; font-size: 0.75rem; letter-spacing: 0.2em;">Reflection Breakdown</h3>
       
-      <!-- IMAGE INSERTION: final-reflection (width 100%) -->
-      <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
-        <img src="final-reflection.jpg" alt="Final Reflection" style="width: 100%; height: auto; display: block;">
-      </div>
-
       <div class="r-card-body">
         This project provided deep practical insights into combining distinct production disciplines. Balancing the technical demands of sound recording with artistic cinematic framing has fundamentally reshaped my long-term creative execution strategy.
       </div>
