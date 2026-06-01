@@ -640,6 +640,7 @@
       gap: 3rem;
     }
     .hero-visual { display: none; }
+    .matrix-2x2 { padding-right: 0; margin-bottom: 2rem; }
     .process-steps { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .skills-grid { grid-template-columns: 1fr; }
     nav .nav-links { display: none; }
@@ -652,6 +653,7 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-logo">Alwin Josh</div>
   <ul class="nav-links">
@@ -663,6 +665,7 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-grid">
     <div>
@@ -696,24 +699,26 @@
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
     
+    <!-- UPDATED 2x2 IMAGE MATRIX MATRIX WITH REQUESTED FILENAMES -->
     <div class="matrix-2x2">
       <div class="matrix-item">
-        <img class="matrix-circle" src="project validation 1.jpg" alt="Project Validation">
+        <img class="matrix-circle" src="project validation.jpg" alt="Project Validation">
         <div class="matrix-label">Project Validation</div>
       </div>
       <div class="matrix-item">
-        <img class="matrix-circle" src="behind-the-scenes.jpg" alt="Behind the Scenes">
+        <img class="matrix-circle" src="behind the scenes.jpg" alt="Behind the Scenes">
         <div class="matrix-label">Behind the Scenes</div>
       </div>
       <div class="matrix-item">
-        <img class="matrix-circle" src="production-outcome.jpg" alt="Outcome">
+        <img class="matrix-circle" src="outcome.jpg" alt="Outcome">
         <div class="matrix-label">Outcome</div>
       </div>
       <div class="matrix-item">
-        <img class="matrix-circle" src="final-reflection.jpg" alt="Reflection">
+        <img class="matrix-circle" src="reflection.jpg" alt="Reflection">
         <div class="matrix-label">Reflection</div>
       </div>
     </div>
@@ -761,6 +766,7 @@
   </div>
 </section>
 
+<!-- PROJECT -->
 <section id="project" class="project-section">
   <div class="project-header">
     <div>
@@ -772,10 +778,6 @@
   <div class="project-main">
     <div class="project-info">
       <span class="project-genre">Film Production · Short Deliverable Portfolio</span>
-      
-      <div style="margin: 0 auto 2rem auto; width: 60%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
-        <img src="project-overview.jpg" alt="Project Overview" style="width: 100%; height: auto; display: block;">
-      </div>
 
       <h3 class="small-cinematic-title">Behind the Scenes</h3>
       <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem;">
@@ -806,6 +808,7 @@
     </div>
 
     <div class="project-sidebar">
+      <!-- IMAGE INSERTION: pre-production (width 100% block) -->
       <div style="margin-bottom: 1.5rem; width: 100%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
         <img src="pre-production.jpg" alt="Pre-Production" style="width: 100%; height: auto; display: block;">
       </div>
@@ -839,6 +842,7 @@
   </div>
 </section>
 
+<!-- PROCESS -->
 <section id="process" class="process-section">
   <p class="section-label">Production Workflow</p>
   <h2 class="section-title">How the project<br>came <em>to life</em></h2>
@@ -846,41 +850,49 @@
 
   <div class="process-steps">
     
+    <!-- COLUMN 1: RESEARCH AND PREPARATION -->
     <div class="process-step">
       <div class="step-num">01</div>
       <div class="step-title">Research & Preparation</div>
       <div class="step-body">Conducting targeted pre-production research to evaluate structural constraints, map layout pathways, and compile script requirements.</div>
       
+      <!-- IMAGE INSERTION: research and preparation -->
       <div class="embedded-inline-img">
         <img src="research-prep.jpg" alt="Research & Preparation Column Visual">
       </div>
     </div>
     
+    <!-- COLUMN 2: PRODUCTION PROCESS -->
     <div class="process-step">
       <div class="step-num">02</div>
       <div class="step-title">Production Process</div>
       <div class="step-body">Recording live ambient profiles and technical audio track configurations directly during the on-set filming phases.</div>
       
+      <!-- IMAGE INSERTION: production process -->
       <div class="embedded-inline-img">
         <img src="production-process-bg.jpg" alt="Production Process Column Visual">
       </div>
     </div>
     
+    <!-- COLUMN 3: POST PRODUCTION -->
     <div class="process-step">
       <div class="step-num">03</div>
       <div class="step-title">Post-Production</div>
       <div class="step-body">Refining captured sound layers, optimizing volume balances, adjusting cuts, and ensuring high-fidelity audio consistency.</div>
       
+      <!-- IMAGE INSERTION: post production -->
       <div class="embedded-inline-img">
         <img src="post-production-bg.jpg" alt="Post Production Column Visual">
       </div>
     </div>
     
+    <!-- COLUMN 4: VISUAL DOCUMENTATION -->
     <div class="process-step">
       <div class="step-num">04</div>
       <div class="step-title">Visual Documentation</div>
       <div class="step-body">Validating the project pipeline via rigorous checkpoints and checking the overarching pacing of the media output.</div>
       
+      <!-- IMAGE INSERTION: visual-doc-1 & visual-doc-2 (side-by-side grid inside column) -->
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin-top: auto; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
         <img src="visual-doc-1.jpg" alt="Visual Documentation 1" style="width: 100%; height: auto; border: 0.5px solid rgba(255,255,255,0.1);">
         <img src="visual-doc-2.jpg" alt="Visual Documentation 2" style="width: 100%; height: auto; border: 0.5px solid rgba(255,255,255,0.1);">
@@ -890,6 +902,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="skills-section">
   <p class="section-label">Skills Demonstrated</p>
   <h2 class="section-title">What I bring<br>to every <em>production</em></h2>
@@ -955,6 +968,7 @@
   </div>
 </section>
 
+<!-- REFLECTION -->
 <section class="reflection-section">
   <p class="section-label">Reflection</p>
   
@@ -969,6 +983,7 @@
 
   <div class="reflection-grid">
     
+    <!-- CARD 1: CHALLENGE OVERCOME -->
     <div class="reflection-card">
       <div class="r-card-label">Challenge Overcome</div>
       
@@ -981,9 +996,11 @@
       </div>
     </div>
     
+    <!-- CARD 2: PRODUCTION OUTCOME COLUMN -->
     <div class="reflection-card">
       <div class="r-card-label">Production Outcome</div>
       
+      <!-- IMAGE INSERTION: production outcome column -->
       <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
         <img src="production-outcome-2.jpg" alt="Production Outcome Display Element" style="width: 100%; height: auto; display: block;">
       </div>
@@ -993,9 +1010,11 @@
       </div>
     </div>
     
+    <!-- CARD 3: FORWARD FOCUS COLUMN -->
     <div class="reflection-card">
       <div class="r-card-label">Forward Focus</div>
       
+      <!-- IMAGE INSERTION: forward focus column -->
       <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
         <img src="forward-focus.jpg" alt="Forward Focus Display Element" style="width: 100%; height: auto; display: block;">
       </div>
@@ -1005,9 +1024,11 @@
       </div>
     </div>
     
+    <!-- CARD 4: REFLECTION BREAKDOWN COLUMN -->
     <div class="reflection-card">
       <div class="r-card-label">Reflection Breakdown</div>
       
+      <!-- IMAGE INSERTION: reflection breakdown column -->
       <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
         <img src="reflection-breakdown.jpg" alt="Reflection Breakdown Element" style="width: 100%; height: auto; display: block;">
       </div>
@@ -1020,6 +1041,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="contact-inner">
     <p class="section-label">Get in Touch</p>
@@ -1035,6 +1057,7 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <span>© 2026 Alwin Josh</span>
   <span>BA Film Production · Sound & Cinematography</span>
