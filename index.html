@@ -258,4 +258,787 @@
   .matrix-circle {
     width: 100%;
     max-width: 150px;
-    aspect-ratio: 1 /
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 0.75rem auto;
+  }
+
+  .matrix-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-body {
+    font-size: 1rem;
+    color: rgba(245,240,232,0.7);
+    line-height: 1.8;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .tag {
+    padding: 0.4rem 0.9rem;
+    border: 0.5px solid var(--border);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    background: rgba(201,168,76,0.06);
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .focus-item {
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    padding: 1.5rem;
+  }
+
+  .focus-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--border);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .focus-name {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .focus-desc {
+    font-size: 0.82rem;
+    color: rgba(245,240,232,0.5);
+    line-height: 1.6;
+  }
+
+  /* PROJECT */
+  .project-section { background: #0a0a0a; }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  .project-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-info {
+    border-top: 1px solid var(--gold);
+    padding-top: 2rem;
+  }
+
+  .project-genre {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    background: rgba(201,168,76,0.12);
+    border: 0.5px solid var(--gold);
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .project-body {
+    font-size: 0.95rem;
+    color: rgba(245,240,232,0.65);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .project-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .stat {
+    border-top: 0.5px solid var(--border);
+    padding-top: 0.75rem;
+  }
+
+  .stat-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  .project-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-block {
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    padding: 1.5rem;
+  }
+
+  .sidebar-block h4 {
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sidebar-list li {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.65);
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .sidebar-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.7rem;
+  }
+
+  /* PROCESS */
+  .process-section { background: var(--dark); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .process-step {
+    padding: 2rem 1.5rem;
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: rgba(201,168,76,0.15);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .step-body {
+    font-size: 0.82rem;
+    color: rgba(245,240,232,0.55);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  /* INLINE INTERNAL GRID LAYOUT IMAGE BOX SYSTEM */
+  .embedded-inline-img {
+    width: 100%;
+    border: 0.5px solid var(--border);
+    padding: 3px;
+    background: var(--dark);
+    margin-top: auto;
+  }
+
+  .embedded-inline-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* SKILLS SHOWCASE */
+  .skills-section { background: #0a0a0a; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 0.5px solid var(--border);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .skill-item {
+    background: #0a0a0a;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .skill-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--border);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .skill-content h4 {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 0.4rem;
+  }
+
+  .skill-content p {
+    font-size: 0.82rem;
+    color: rgba(245,240,232,0.5);
+    line-height: 1.6;
+  }
+
+  /* REFLECTION */
+  .reflection-section { background: var(--dark); }
+
+  .reflection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .reflection-card {
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .r-card-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+
+  .r-card-body {
+    font-size: 0.9rem;
+    color: rgba(245,240,232,0.65);
+    line-height: 1.8;
+  }
+
+  .blockquote {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 2rem 0 3rem 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: rgba(245,240,232,0.8);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  /* CONTACT */
+  .contact-section {
+    background: #050505;
+    text-align: center;
+  }
+
+  .contact-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-email {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin: 2rem auto 3rem;
+    transition: color 0.2s;
+  }
+
+  .contact-email:hover { color: var(--cream); }
+
+  /* RESPONSIVE STRUCTURE */
+  @media (max-width: 992px) {
+    .hero-grid, .about-grid, .project-main, .reflection-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .hero-visual { display: none; }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .skills-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+  }
+
+  @media (max-width: 576px) {
+    .process-steps { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Alwin Josh</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <p class="hero-eyebrow">BA Film Production · Sound & Cinematography</p>
+      <h1 class="hero-title">Shaping<br>Stories Through<br><em>Sound</em></h1>
+      <p class="hero-desc">I am a BA Film Production student who appreciates both the technical and artistic parts of filmmaking, focusing deeply on sound design and practical mixing workflows.</p>
+      <a href="#project" class="hero-cta">View my work →</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="film-strip">
+          <div class="strip-hole"></div><div class="strip-hole"></div><div class="strip-hole"></div>
+          <div class="strip-hole"></div><div class="strip-hole"></div><div class="strip-hole"></div>
+          <div class="strip-hole"></div><div class="strip-hole"></div>
+        </div>
+        <div class="hero-card-icon">🎬</div>
+        <div class="hero-card-label">Featured Film</div>
+        <div class="hero-card-title">Production Portfolio</div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">🎙</div>
+        <div class="hero-card-label">Specialty</div>
+        <div class="hero-card-title">Sound Production</div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">🎞</div>
+        <div class="hero-card-label">Focus</div>
+        <div class="hero-card-title">Cinematography</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    
+    <div class="matrix-2x2">
+      <div class="matrix-item">
+        <img class="matrix-circle" src="project validation 1.jpg" alt="Project Validation">
+        <div class="matrix-label">Project Validation</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="behind-the-scenes.jpg" alt="Behind the Scenes">
+        <div class="matrix-label">Behind the Scenes</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="production-outcome.jpg" alt="Outcome">
+        <div class="matrix-label">Outcome</div>
+      </div>
+      <div class="matrix-item">
+        <img class="matrix-circle" src="final-reflection.jpg" alt="Reflection">
+        <div class="matrix-label">Reflection</div>
+      </div>
+    </div>
+
+    <div>
+      <p class="about-body">
+        I am a BA Film Production student. I appreciate both the technical and artistic parts of filmmaking. I am totally interested in sound production and cinematography, and I enjoy examining how sound and pictures combine to convey emotion and meaning in movies.
+        <br><br>
+        I have been acquiring experience working in a team setting and honing my practical editing and sound design skills through my studies, blending distinct cinematic mediums to tell cohesive stories.
+      </p>
+      <div class="skill-tags">
+        <span class="tag">Sound Design</span>
+        <span class="tag">Cinematography</span>
+        <span class="tag">Practical Editing</span>
+        <span class="tag">Dialogue Recording</span>
+        <span class="tag">Audio Mixing</span>
+        <span class="tag">Pre-Production Research</span>
+        <span class="tag">Visual Documentation</span>
+        <span class="tag">Team Collaboration</span>
+      </div>
+
+      <div class="focus-grid">
+        <div class="focus-item">
+          <div class="focus-num">01</div>
+          <div class="focus-name">Sound Production</div>
+          <div class="focus-desc">Examining how captured audio track environments match narrative weight and screen performance.</div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-num">02</div>
+          <div class="focus-name">Cinematography</div>
+          <div class="focus-desc">Balancing composition structures and visual styling with the thematic layout of the film.</div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-num">03</div>
+          <div class="focus-name">Practical Editing</div>
+          <div class="focus-desc">Refining cuts, spacing sequence pacing, and handling post-production assets meticulously.</div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-num">04</div>
+          <div class="focus-name">Team Collaboration</div>
+          <div class="focus-desc">Communicating seamlessly with crew members from pre-production phases to the final mix.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project" class="project-section">
+  <div class="project-header">
+    <div>
+      <p class="section-label">Featured Project</p>
+      <h2 class="section-title"><em>Project Details & Analysis</em></h2>
+    </div>
+  </div>
+
+  <div class="project-main">
+    <div class="project-info">
+      <span class="project-genre">Film Production · Short Deliverable Portfolio</span>
+      
+      <div style="margin: 0 auto 2rem auto; width: 60%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
+        <img src="project-overview.jpg" alt="Project Overview" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <h3 class="small-cinematic-title">Behind the Scenes</h3>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem;">
+        Comprehensive visual tracking logs detailing equipment deployment, production workspace configuration, and technical monitoring layouts.
+      </p>
+
+      <h3 class="small-cinematic-title">Project Validation</h3>
+      <p class="project-subtitle">Core Production Elements & Execution Pipeline</p>
+      <p class="project-body">
+        The project faced distinct operational requirements, specifically targeting how recorded reading dialogue accurately matched the atmospheric background environment and underlying emotion of each scene.
+        <br><br>
+        A substantial component of the project relied heavily on the careful combination of sound and pictures, establishing a tailored creative balance optimized specifically for targeted student validation.
+      </p>
+      <div class="project-stats">
+        <div class="stat">
+          <div class="stat-val">100%</div>
+          <div class="stat-label">Audio-Visual Sync</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">Dual</div>
+          <div class="stat-label">Technical Focus</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">2 Focus</div>
+          <div class="stat-label">Equipment/Software</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-sidebar">
+      <div style="margin-bottom: 1.5rem; width: 100%; border: 0.5px solid var(--border); padding: 5px; background: var(--card-bg);">
+        <img src="pre-production.jpg" alt="Pre-Production" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Equipment & Infrastructure Used</h4>
+        <ul class="sidebar-list">
+          <li>Location Audio Recording Tools</li>
+          <li>Cinematography Camera Systems</li>
+          <li>Production Monitors</li>
+          <li>Studio Laptop workstation</li>
+        </ul>
+      </div>
+      <div class="sidebar-block">
+        <h4>Software Environment</h4>
+        <ul class="sidebar-list">
+          <li>Digital Audio Workstation (DAW) Tools</li>
+          <li>Timeline Editing Frameworks</li>
+          <li>Post-Production Audio Software</li>
+        </ul>
+      </div>
+      <div class="sidebar-block">
+        <h4>Pre-Production Elements</h4>
+        <ul class="sidebar-list">
+          <li>Research and preparation criteria</li>
+          <li>Suggested visual storyboards</li>
+          <li>Technical pipeline documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process-section">
+  <p class="section-label">Production Workflow</p>
+  <h2 class="section-title">How the project<br>came <em>to life</em></h2>
+  <div class="divider"></div>
+
+  <div class="process-steps">
+    
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Research & Preparation</div>
+      <div class="step-body">Conducting targeted pre-production research to evaluate structural constraints, map layout pathways, and compile script requirements.</div>
+      
+      <div class="embedded-inline-img">
+        <img src="research-prep.jpg" alt="Research & Preparation Column Visual">
+      </div>
+    </div>
+    
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Production Process</div>
+      <div class="step-body">Recording live ambient profiles and technical audio track configurations directly during the on-set filming phases.</div>
+      
+      <div class="embedded-inline-img">
+        <img src="production-process-bg.jpg" alt="Production Process Column Visual">
+      </div>
+    </div>
+    
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Post-Production</div>
+      <div class="step-body">Refining captured sound layers, optimizing volume balances, adjusting cuts, and ensuring high-fidelity audio consistency.</div>
+      
+      <div class="embedded-inline-img">
+        <img src="post-production-bg.jpg" alt="Post Production Column Visual">
+      </div>
+    </div>
+    
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Visual Documentation</div>
+      <div class="step-body">Validating the project pipeline via rigorous checkpoints and checking the overarching pacing of the media output.</div>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin-top: auto; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
+        <img src="visual-doc-1.jpg" alt="Visual Documentation 1" style="width: 100%; height: auto; border: 0.5px solid rgba(255,255,255,0.1);">
+        <img src="visual-doc-2.jpg" alt="Visual Documentation 2" style="width: 100%; height: auto; border: 0.5px solid rgba(255,255,255,0.1);">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="skills-section">
+  <p class="section-label">Skills Demonstrated</p>
+  <h2 class="section-title">What I bring<br>to every <em>production</em></h2>
+  <div class="divider"></div>
+
+  <div class="skills-grid">
+    <div class="skill-item">
+      <div class="skill-num">01</div>
+      <div class="skill-content">
+        <h4>Sound Design Integration</h4>
+        <p>Combining structural sound foundations to enrich environmental narratives and on-screen atmosphere.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">02</div>
+      <div class="skill-content">
+        <h4>Cinematography Execution</h4>
+        <p>Managing focal perspective layouts, scene lighting structures, and detailed camera tracking.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">03</div>
+      <div class="skill-content">
+        <h4>Creative Editing & Pacing</h4>
+        <p>Honing a refined understanding of shot-to-shot timing relationships to preserve continuous visual rhythms.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">04</div>
+      <div class="skill-content">
+        <h4>Technical Audio Capture</h4>
+        <p>Operating dedicated production recording rigs while actively managing live audio performance levels.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">05</div>
+      <div class="skill-content">
+        <h4>Team Workflow Synchronization</h4>
+        <p>Collaborating dynamically within mixed crew structural layers to align creative outcomes smoothly.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">06</div>
+      <div class="skill-content">
+        <h4>Strategic Crisis Resolution</h4>
+        <p>Navigating environmental issues and coordination challenges systematically across production steps.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">07</div>
+      <div class="skill-content">
+        <h4>Project Architecture Review</h4>
+        <p>Deploying research and pre-production blueprints to maximize end-to-end efficiency on set.</p>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-num">08</div>
+      <div class="skill-content">
+        <h4>Acoustic Balance & Quality Control</h4>
+        <p>Applying precise post-production cleanup workflows to maintain consistent delivery standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reflection-section">
+  <p class="section-label">Reflection</p>
+  
+  <h3 class="small-cinematic-title">Outcome Analysis</h3>
+  <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem;">
+    Critical review metrics measuring post-production audio consistency, scene synchronization depth, and narrative output values.
+  </p>
+
+  <blockquote class="blockquote">
+    "The core of the project was utilizing the combination of sound and picture to ensure a professional and immersive cinematic storytelling artifact."
+  </blockquote>
+
+  <div class="reflection-grid">
+    
+    <div class="reflection-card">
+      <div class="r-card-label">Challenge Overcome</div>
+      
+      <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
+        <img src="challenging.jpg" alt="Challenging Layout" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <div class="r-card-body">
+        Managing communication barriers with group members at the beginning was one of the central challenges faced during this production layout. Committing to a strong structure of clear visual documentation and regular, scheduled progress reviews allowed the team to align its technical objectives effectively.
+      </div>
+    </div>
+    
+    <div class="reflection-card">
+      <div class="r-card-label">Production Outcome</div>
+      
+      <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
+        <img src="production-outcome-2.jpg" alt="Production Outcome Display Element" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <div class="r-card-body">
+        The final sound track mix completely served to strengthen the emotional intensity of the visual composition. It elevated the project beyond a baseline level, successfully delivering an optimized narrative arc that met all academic criteria.
+      </div>
+    </div>
+    
+    <div class="reflection-card">
+      <div class="r-card-label">Forward Focus</div>
+      
+      <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
+        <img src="forward-focus.jpg" alt="Forward Focus Display Element" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <div class="r-card-body">
+        Moving forward, my intent is focused on keeping both sound production and structural cinematography at the forefront of my creative work. I plan to refine my approach to pre-production planning to minimize post-production troubleshooting bottlenecks.
+      </div>
+    </div>
+    
+    <div class="reflection-card">
+      <div class="r-card-label">Reflection Breakdown</div>
+      
+      <div style="margin-bottom: 1rem; width: 100%; border: 0.5px solid var(--border); padding: 3px; background: var(--dark);">
+        <img src="reflection-breakdown.jpg" alt="Reflection Breakdown Element" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <div class="r-card-body">
+        This project provided deep practical insights into combining distinct production disciplines. Balancing the technical demands of sound recording with artistic cinematic framing has fundamentally reshaped my long-term creative execution strategy.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's make<br>something <em>together</em></h2>
+    <div class="divider" style="margin: 1.5rem auto 0;"></div>
+    <p style="color: rgba(245,240,232,0.55); margin: 1.5rem 0 0; font-size: 0.9rem;">
+      Open to collaborations, placements, and film production opportunities.
+    </p>
+    <a class="contact-email" href="mailto:alwinjosh@email.com">alwinjosh@email.com</a>
+    <p style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);">
+      BA Film Production Student
+    </p>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Alwin Josh</span>
+  <span>BA Film Production · Sound & Cinematography</span>
+</footer>
+
+</body>
+</html>
